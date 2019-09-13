@@ -6,7 +6,7 @@ const app = express();
 // Servir solo los archivos estáticos del directorio dist
 app.use(express.static(__dirname + '/dist/angularbases'));
 
-app.get('/ *', function(req, res) {
+app.get('/*', function(req, res) {
 
     res.sendFile(path.join(__dirname + '/dist/angularbases/index.html'));
 });
