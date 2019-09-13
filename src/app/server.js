@@ -6,11 +6,11 @@ aplicación
 const = express();
 
 // Servir solo los archivos estáticos del directorio dist
-app.use(express.static(__ dirname + '/ dist / <name-of-app>'));
+app.use(express.static(__ dirname + '/dist/02-angularbases'));
 
 app.get('/ *', function(req, res) {
 
-    res.sendFile(path.join(__ dirname + '/ dist / <name-of-app> /index.html'));
+    res.sendFile(path.join(__ dirname + '/dist/02-angularbases/index.html'));
 });
 
 // Inicie la aplicación escuchando en el puerto predeterminado de Heroku
